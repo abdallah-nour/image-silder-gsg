@@ -1,38 +1,32 @@
-.App {
-  text-align: center;
+.app{
+    background-color:rgb(24, 24, 24);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    background-color:rgb(37, 37, 37);
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    width:80%;
+    height: 100vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title-div{
+    position: absolute;
+    margin-top:10px;
+    background-color:rgb(24, 24, 24);
+    padding:10px 30px 20px;
+    border-radius: 50px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title-txt{
+    color:whitesmoke;
+    font-size:3.5em;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slider-wrapper{
+    position: fixed; /* here can I use fixed to prevent from scrolling when hovering, is there another solution to do the same without using fixed.*/
+    top:-180px;
+    width:240px;
+    min-height: 1150px;
+    transform: rotate(65deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
